@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form (ngSubmit)="iniciarSesion()">
+        <div>
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuario" [(ngModel)]="usuario" required>
+        </div>
+        <div>
+          <label for="contrasenia">Contraseña:</label>
+          <input type="password" id="contrasenia" [(ngModel)]="contrasenia" required>
+        </div>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      
+</body>
+</html>
+
+
